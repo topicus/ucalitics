@@ -1,0 +1,25 @@
+{
+  "name": "ejercicio-clase-mongo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/topicus/ejercicio-clase-mongo.git"
+  },
+  "keywords": [],
+  "author": "Mariano Carballal <marianocarballal@gmail.com> (http://twitter.com/topicus1)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/topicus/ejercicio-clase-mongo/issues"
+  },
+  "homepage": "https://github.com/topicus/ejercicio-clase-mongo#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "mongodb": "^2.2.31"
+  }
+}
