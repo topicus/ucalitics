@@ -11,7 +11,7 @@ MongoClient.connect(uri, (err, db) =>{
   })
   app.use(express.static("public") )
   app.get("/report", (req, res) => {
-    db .collection('flights').find().limit(5).toArray(function(err, result){
+    db .collection('flights').find().limit(5).toArray((err, result) => {
       res.send(result);
     })
   })
