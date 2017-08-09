@@ -10,10 +10,10 @@ MongoClient.connect(uri, (err, db) =>{
     res.sendFile(path.join(__dirname, "/index.html") )
   })
   app.use(express.static("public") )
-  app.get("/report", (req, res) =>{
-    db.collection('flights').find({}, (err, result) =>{
-      res.send(result.toArray())
-    });
+  app.get("/report", (req, res) => {
+    db .collection('flights').find().limit(5).toArray((err, result) => {
+      res.send(result);
+    })
   })
   app.listen(3000, () =>{
     console.log("El servidor esta corriendo sobre http://localhost:3000");
